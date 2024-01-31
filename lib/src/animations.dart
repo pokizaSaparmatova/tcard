@@ -13,7 +13,7 @@ class CardSizes {
   }
 
   static Size back(BoxConstraints constraints) {
-    return Size(constraints.maxWidth * 0.8, constraints.maxHeight * .9);
+    return Size(constraints.maxWidth * 0.8, constraints.maxHeight * 0.85);
   }
 }
 
@@ -28,10 +28,10 @@ class CardAlignments {
 class CardAnimations {
   /// 最前面卡片的消失动画
   static Animation<Alignment> frontCardDisappearAnimation(
-    AnimationController parent,
-    Alignment beginAlignment,
-    SwipeInfo info,
-  ) {
+      AnimationController parent,
+      Alignment beginAlignment,
+      SwipeInfo info,
+      ) {
     return AlignmentTween(
       begin: beginAlignment,
       end: Alignment(
@@ -50,8 +50,8 @@ class CardAnimations {
 
   /// 中间卡片位置变换动画
   static Animation<Alignment> middleCardAlignmentAnimation(
-    AnimationController parent,
-  ) {
+      AnimationController parent,
+      ) {
     return AlignmentTween(
       begin: CardAlignments.middle,
       end: CardAlignments.front,

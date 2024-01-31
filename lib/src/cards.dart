@@ -463,12 +463,13 @@ class TCardState extends State<TCard> with TickerProviderStateMixin {
       size: widget.size,
       child: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
+
           // 使用 LayoutBuilder 获取容器的尺寸，传个子项计算卡片尺寸
           final Size size = MediaQuery.of(context).size;
 
           return Stack(
             children: <Widget>[
-              // _backCard(constraints),
+              _backCard(constraints),
               _middleCard(constraints),
               _frontCard(constraints),
               // 使用一个 SizedBox 覆盖父元素整个区域
