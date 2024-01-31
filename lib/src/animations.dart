@@ -9,7 +9,7 @@ class CardSizes {
   }
 
   static Size middle(BoxConstraints constraints) {
-    return Size(constraints.maxWidth * 0.85, constraints.maxHeight * 0.9);
+    return Size(constraints.maxWidth * 0.85, constraints.maxHeight * 0.85);
   }
 
   static Size back(BoxConstraints constraints) {
@@ -89,7 +89,7 @@ class CardAnimations {
     ).animate(
       CurvedAnimation(
         parent: parent,
-        curve: Interval(0.4, 0.7, curve: Curves.easeIn),
+        curve: Interval(0.2, 0.5, curve: Curves.easeIn),
       ),
     );
   }
@@ -105,7 +105,7 @@ class CardAnimations {
     ).animate(
       CurvedAnimation(
         parent: parent,
-        curve: Interval(0.4, 0.7, curve: Curves.easeIn),
+        curve: Interval(0.2, 0.5, curve: Curves.easeIn),
       ),
     );
   }
@@ -176,7 +176,7 @@ class CardReverseAnimations {
     ).animate(
       CurvedAnimation(
         parent: parent,
-        curve: Interval(0.4, 0.7, curve: Curves.easeIn),
+        curve: Interval(0.2, 0.5, curve: Curves.easeIn),
       ),
     );
   }
@@ -192,7 +192,7 @@ class CardReverseAnimations {
     ).animate(
       CurvedAnimation(
         parent: parent,
-        curve: Interval(0.4, 0.7, curve: Curves.easeIn),
+        curve: Interval(0.2, 0.5, curve: Curves.easeIn),
       ),
     );
   }

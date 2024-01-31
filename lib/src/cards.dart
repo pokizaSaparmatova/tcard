@@ -468,7 +468,7 @@ class TCardState extends State<TCard> with TickerProviderStateMixin {
 
           return Stack(
             children: <Widget>[
-              _backCard(constraints),
+              // _backCard(constraints),
               _middleCard(constraints),
               _frontCard(constraints),
               // 使用一个 SizedBox 覆盖父元素整个区域
